@@ -82,4 +82,4 @@ Here, the button K1 will trigger the shortcut CTRL+Z (undo, KEY_W is Z in my fre
 
 Note : again, this script must be set as executable and run with administrator privileges
 
-PS : It's my first Python script and it was written quickly, so I'm someone more advanced can do it better : and make it evolve (interfaces, tablet profiles, user keyboard condigurations) etc. 
+PS : It's my first Python script and it was written quickly, so I'm sure someone more advanced can do it and enhance it (interfaces, tablet profiles, user keyboard condigurations) etc. 
