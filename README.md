@@ -33,34 +33,34 @@ Find your tablet keyboard name and replace the DevName variable
 
 There values are the values captured from the XP Pen Artist 13.3 Pro. It assigns the sequence of key event codes provided by you tablet when pressing a button. On my XP Pen Artist 13.3 Pro tablet I have 8 buttons (that I have named from K1 to K8) and a scroll wheel that is triggering two buttons (named KL and KR). Feel free to adapt this array to match your number of buttons and keys codes sequences. The button event codes can be captured from the catch_buttons.py script (see below).
 
-  `Inputs = dict();  
-  Inputs['K1'] = [48]  
-  Inputs['K2'] = [18]  
-  Inputs['K3'] = [56]  
-  Inputs['K4'] = [57]  
-  Inputs['K5'] = [47]  
-  Inputs['K6'] = [29, 31]  
-  Inputs['K7'] = [29, 44]  
-  Inputs['K8'] = [29, 56, 49]  
-  Inputs['KL'] = [29, 74]  
-  Inputs['KR'] = [29, 78]`
+  `Inputs = dict();`  
+  `Inputs['K1'] = [48]`  
+  `Inputs['K2'] = [18]`  
+  `Inputs['K3'] = [56]`  
+  `Inputs['K4'] = [57]`  
+  `Inputs['K5'] = [47]`  
+  `Inputs['K6'] = [29, 31]`  
+  `Inputs['K7'] = [29, 44]`  
+  `Inputs['K8'] = [29, 56, 49]`  
+  `Inputs['KL'] = [29, 74]`  
+  `Inputs['KR'] = [29, 78]`
 
 ### Adapt "Outputs" array : your desired keys matching your buttons
 
 The Output array must have the same key names (K1, K2 ...) as the Inputs array. The key names make the match between inputs and outputs in the script. These are example for custom shortcuts. You can set how many KEY you want to make shortcuts. All the output keys are pressed and released simultanously. Use the catch_keys.py script to know your keycodes because it depends on your keyboard layout (in french keyboard standard layout the letter "w" is KEY_Z : look at he K5 button wich trigger CTRL+Z)
 
 
-  `Outputs = dict();<br/>
-  Outputs['K1'] = ["KEY_LEFTSHIFT", "KEY_LEFTCTRL", "KEY_P"]  
-  Outputs['K2'] = ["KEY_LEFTSHIFT", "KEY_LEFTCTRL", "KEY_E"]  
-  Outputs['K3'] = ["KEY_LEFTSHIFT", "KEY_LEFTCTRL", "KEY_H"]  
-  Outputs['K4'] = ["KEY_LEFTCTRL", "KEY_S"]  
-  Outputs['K5'] = ["KEY_LEFTCTRL", "KEY_W"]  
-  Outputs['K6'] = ["KEY_LEFTCTRL", "KEY_Y"]  
-  Outputs['K7'] = ["KEY_PAGEDOWN"]  
-  Outputs['K8'] = ["KEY_LEFTCTRL", "KEY_D"]  
-  Outputs['KL'] = ["KEY_LEFTCTRL", "KEY_KPMINUS"]  
-  Outputs['KR'] = ["KEY_LEFTCTRL", "KEY_KPPLUS"]`
+  `Outputs = dict();`  
+  `Outputs['K1'] = ["KEY_LEFTSHIFT", "KEY_LEFTCTRL", "KEY_P"]`  
+  `Outputs['K2'] = ["KEY_LEFTSHIFT", "KEY_LEFTCTRL", "KEY_E"]`  
+  `Outputs['K3'] = ["KEY_LEFTSHIFT", "KEY_LEFTCTRL", "KEY_H"]`  
+  `Outputs['K4'] = ["KEY_LEFTCTRL", "KEY_S"]`  
+  `Outputs['K5'] = ["KEY_LEFTCTRL", "KEY_W"]`  
+  `Outputs['K6'] = ["KEY_LEFTCTRL", "KEY_Y"]`  
+  `Outputs['K7'] = ["KEY_PAGEDOWN"]`  
+  `Outputs['K8'] = ["KEY_LEFTCTRL", "KEY_D"]`  
+  `Outputs['KL'] = ["KEY_LEFTCTRL", "KEY_KPMINUS"]`  
+  `Outputs['KR'] = ["KEY_LEFTCTRL", "KEY_KPPLUS"]`
 
 ## catch_buttons.py
 
