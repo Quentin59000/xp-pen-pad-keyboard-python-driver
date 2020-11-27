@@ -24,10 +24,10 @@ This is the main script, I start it as a Linux Service (it should be better with
 ### Adapt "DevName" variable
 
 Change the DevName matching your Tablet KeyBoard Name. You can find it's name with :
-  xinput
+  `xinput`
 
 Find your tablet keyboard name and replace the DevName variable
-  DevName = "YOUR TABLET KEYBOARD NAME HERE"
+  `DevName = "YOUR TABLET KEYBOARD NAME HERE"`
 
 ### Adapt "Inputs" array : key events sent by the tablet
 
@@ -81,3 +81,5 @@ This script is designed to help you to capture your desired keys configuration f
 Here, the button K1 will trigger the shortcut CTRL+Z (undo, KEY_W is Z in my french keyboard layout)
 
 Note : again, this script must be set as executable and run with administrator privileges
+
+PS : It's my first Python script and it was written quickly, so I'm someone more advanced can do it better : and make it evolve (interfaces, tablet profiles, user keyboard condigurations) etc. 
