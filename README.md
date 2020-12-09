@@ -19,7 +19,7 @@ So, to set up the keyboard, there are 3 scripts to help you :
 
 ## init_pad.py
 
-This is the main script, I start it as a Linux Service (it should be better with udev rules) and it must executable and run with administrator privileges. It captures the buttons events and emulate your key configuration (see below). It must be configured to match yout tablet keyboard device, your tablet buttons inputs and to match what keys (or shortcuts) you want to trigger with them.
+This is the main script, I start it with an udev rule launching a Linux Service (look at related files tablet.service and 91-tablet.rules) and it must executable and run with administrator privileges. It captures the buttons events and emulate your key configuration (see below). It must be configured to match yout tablet keyboard device, your tablet buttons inputs and to match what keys (or shortcuts) you want to trigger with them.
 
 ### Adapt "DevName" variable
 
