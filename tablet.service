@@ -1,0 +1,10 @@
+[Unit]
+Description=Tablet Initialization
+
+[Service]
+Type=idle
+ExecStart=/home/grk/To/Cloud/Outils/init_tablet/init_pad.py
+
+[Install]
+WantedBy=multi-user.target
+

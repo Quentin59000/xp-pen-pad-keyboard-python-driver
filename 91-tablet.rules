@@ -1,0 +1,1 @@
+ATTR{idProduct}=="092b", ATTR{idVendor}=="28bd", RUN+="/usr/bin/systemctl start tablet.service"
